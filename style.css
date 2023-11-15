@@ -1,1 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
 
+}
+
+H1{
+    padding: 74px 139px 30px;
+}
+
+.pic{
+    object-position: 50% 50%;
+    
+}
