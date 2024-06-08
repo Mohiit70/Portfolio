@@ -1,24 +1,27 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0px 367px;
-    background-color: #fdfaf6;
+    margin: 0 auto;
+    background-color: #121212;
+    color: #e0e0e0;
+    max-width: 1200px;
+    padding: 20px;
 }
 
 h1 {
-    color: #050505;
+    color: #ffffff;
     margin-bottom: 10px;
     font-size: 45px;
     font-weight: 520;
 }
 
 p {
-    color: #110f0f;
+    color: #e0e0e0;
     font-size: 17px;
 }
 
 a {
-    color: #1e2934;
+    color: #bb86fc;
     text-decoration: none;
     font-weight: bold;
 }
@@ -26,8 +29,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-
 
 .profile-container {
     display: flex;
@@ -38,14 +39,15 @@ a:hover {
 
 .profile-image {
     margin-top: 10px;
-    width: 240px;
-    height: 249px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
     display: block;
     box-shadow: none;
 }
 
 .social-links a {
-    color: #131415;
+    color: #bb86fc;
     text-decoration: none;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -60,5 +62,50 @@ a:hover {
 }
 
 h3 {
-    font-weight: inherit
-}  
+    font-weight: inherit;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .profile-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .profile-image {
+        width: 100%;
+        max-width: 150px;
+    }
+}
